@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="404.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ProductoController">
+   <children>
+      <Pane layoutX="3.0" layoutY="1.0" prefHeight="355.0" prefWidth="670.0" style="-fx-background-color: #99cfb4;">
+         <children>
+            <TextField fx:id="txtDescripcion" layoutX="220.0" layoutY="52.0" prefHeight="25.0" prefWidth="245.0" promptText="Descripcion" />
+            <TextField fx:id="txtNombre" layoutX="61.0" layoutY="52.0" prefHeight="25.0" prefWidth="155.0" promptText="Nombre" />
+            <TextField fx:id="txtPrecio" layoutX="471.0" layoutY="52.0" prefHeight="25.0" prefWidth="105.0" promptText="Precio Unidad" />
+            <TextField fx:id="txtCantidad" layoutX="584.0" layoutY="52.0" prefHeight="25.0" prefWidth="68.0" promptText="Cantidad" />
+            <TableView fx:id="tabla" layoutX="11.0" layoutY="84.0" onMouseClicked="#click" prefHeight="261.0" prefWidth="652.0">
+               <columns>
+                  <TableColumn fx:id="colId" prefWidth="41.0" text="Id" />
+                  <TableColumn fx:id="colNombre" prefWidth="158.0" text="Nombre" />
+                  <TableColumn fx:id="colDescripcion" prefWidth="251.0" text="Descripcion" />
+                  <TableColumn fx:id="colPrecio" prefWidth="113.0" text="Precio Unidad" />
+                  <TableColumn fx:id="colCantidad" prefWidth="72.0" text="Cantidad" />
+               </columns>
+            </TableView>
+            <TextField fx:id="txtId" editable="false" layoutX="17.0" layoutY="51.0" prefHeight="25.0" prefWidth="41.0" promptText="Id" />
+            <Label layoutX="260.0" layoutY="14.0" prefHeight="21.0" prefWidth="177.0" text="Ficha de Productos" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+
+      <Button fx:id="btnInsertar" layoutX="17.0" layoutY="365.0" mnemonicParsing="false" onAction="#insertar" prefHeight="29.0" prefWidth="94.0" text="Insertar">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnActualizar" layoutX="119.0" layoutY="365.0" mnemonicParsing="false" onAction="#actualizar" prefHeight="29.0" prefWidth="94.0" text="Modificar">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="221.0" layoutY="365.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="29.0" prefWidth="94.0" text="Eliminar">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+
+   </children>
+</AnchorPane>

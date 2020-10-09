@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="94.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ClienteController">
+   <top>
+      <Pane prefHeight="42.0" prefWidth="357.0" style="-fx-background-color: #99cfb4;" BorderPane.alignment="CENTER">
+         <children>
+
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="49.0" prefWidth="357.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnIndividual" layoutX="130.0" layoutY="13.0" mnemonicParsing="false" onAction="#gIndividual" text="Individual">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEmpresas" layoutX="27.0" layoutY="13.0" mnemonicParsing="false" onAction="#gEmpresas" text="Empresas">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnconsultar" layoutX="226.0" layoutY="12.0" mnemonicParsing="false" onAction="#consultar" text="Consulta">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

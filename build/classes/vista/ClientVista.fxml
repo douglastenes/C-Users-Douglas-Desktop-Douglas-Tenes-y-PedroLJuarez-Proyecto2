@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ClienteController">
+   <top>
+      <Pane prefHeight="68.0" prefWidth="692.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="229.0" layoutY="18.0" text="GESTION CLIENTES">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAtras" layoutX="517.0" layoutY="17.0" mnemonicParsing="false" onAction="#atras" text="Regresar">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="332.0" prefWidth="624.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnIndividual" layoutX="278.0" layoutY="40.0" mnemonicParsing="false" onAction="#gIndividual" text="Individual">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEmpresas" layoutX="80.0" layoutY="40.0" mnemonicParsing="false" onAction="#gEmpresas" text="Empresas">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="143.0" fitWidth="177.0" layoutX="220.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/usuario.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="125.0" fitWidth="181.0" layoutX="35.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/empresa.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnconsultar" layoutX="476.0" layoutY="40.0" mnemonicParsing="false" onAction="#consultar" text="Consulta">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="133.0" fitWidth="130.0" layoutX="449.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/consulta.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="279.0" prefWidth="541.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.InicioController">
+   <children>
+      <Pane layoutY="34.0" prefHeight="237.0" prefWidth="541.0" style="-fx-background-color: #99cfb4;">
+         <children>
+            <TextArea layoutX="19.0" layoutY="61.0" prefHeight="153.0" prefWidth="502.0" text="Proyecto No.2  programación, Sede Boca del Monte&#10;Domingo Seccion A ing. Christian&#10;&#10;Integrantes:&#10;&#10;Alumno: DOUGLAS EMMANUEL TENES OVANDO Carnet: 7691-19-13866&#10;Alumno: PEDRO LUIS JUAREZ OSORIO Carnet: 7691-19-17925 &#10;">
+               <font>
+                  <Font name="Courier New" size="13.0" />
+               </font>
+            </TextArea>
+         </children></Pane>
+      <MenuBar layoutY="2.0" prefHeight="32.0" prefWidth="541.0">
+         <menus>
+            <Menu fx:id="Mn1gestiones" mnemonicParsing="false" text="Gestiones">
+               <items>
+                  <MenuItem fx:id="MnEmpresa" mnemonicParsing="false" onAction="#MnEmpresa" text="Ir a Empresa" />
+                  <MenuItem fx:id="Mncliente" mnemonicParsing="false" onAction="#Mncliente" text="ir a Clientes" />
+               </items>
+
+            </Menu>
+            <Menu mnemonicParsing="false" text="Productos">
+               <items>
+                  <MenuItem fx:id="Mnproductos" mnemonicParsing="false" onAction="#Mnproductos" text="ir a Productos" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Ordenes">
+               <items>
+                  <MenuItem fx:id="Mnorden" mnemonicParsing="false" onAction="#Mnorden" text="ir a Ordenes" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Reportes">
+               <items>
+                  <MenuItem fx:id="Mnreporte" mnemonicParsing="false" onAction="#Mnreporte" text="Clientes" />
+                  <MenuItem fx:id="Mnproductosr" mnemonicParsing="false" onAction="#Mnproductosr" text="Productos" />
+                  <MenuItem fx:id="Mnordenr" mnemonicParsing="false" onAction="#Mnordenr" text="Orden de Compra" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Salir">
+
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

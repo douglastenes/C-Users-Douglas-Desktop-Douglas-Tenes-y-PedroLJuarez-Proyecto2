@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.InicioController">
+   <center>
+      <SplitPane orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="375.0" prefWidth="598.0">
+               <children>
+                  <Pane layoutX="13.0" layoutY="84.0" prefHeight="60.0" prefWidth="573.0" style="-fx-background-color: #0598ff;">
+                     <children>
+                        <Button fx:id="btnCliente" layoutX="5.0" layoutY="17.0" mnemonicParsing="false" onAction="#gestionCliente" prefHeight="25.0" prefWidth="82.0" text="Clientes">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="btnProducto" layoutX="97.0" layoutY="18.0" mnemonicParsing="false" onAction="#gestioProducto" prefHeight="26.0" prefWidth="90.0" text="Productos">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="btnOrden" layoutX="199.0" layoutY="17.0" mnemonicParsing="false" onAction="#gestionOrden" prefHeight="25.0" prefWidth="75.0" text="Ordenes">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="btnSalir" layoutX="495.0" layoutY="18.0" mnemonicParsing="false" onAction="#gestionSalir" text="Salir">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font></Button>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="3.0" layoutY="6.0" prefHeight="68.0" prefWidth="594.0" style="-fx-background-color: #0598ff;">
+                     <children>
+                        <Label layoutX="102.0" layoutY="13.0" text="SISTEMA DE VENTAS">
+                           <font>
+                              <Font name="Arial" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="206.0" fitWidth="530.0" layoutX="68.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/inicio.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>

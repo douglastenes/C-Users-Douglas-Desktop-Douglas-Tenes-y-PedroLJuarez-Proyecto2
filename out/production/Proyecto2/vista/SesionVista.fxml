@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="196.0" prefWidth="344.0" style="-fx-background-color: #99cfb4;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.SesionController">
+   <right>
+      <AnchorPane prefHeight="234.0" prefWidth="417.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtUser" alignment="CENTER" layoutX="112.0" layoutY="58.0" prefHeight="26.0" prefWidth="169.0" promptText="User Name" text="admin">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></TextField>
+            <PasswordField fx:id="txtPassword" alignment="CENTER" layoutX="112.0" layoutY="91.0" prefHeight="26.0" prefWidth="167.0" promptText="Password" text="admin">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></PasswordField>
+            <Button fx:id="txtLogin" layoutX="114.0" layoutY="128.0" mnemonicParsing="false" onAction="#login" prefHeight="29.0" prefWidth="78.0" text="Ingresar">
+               <font>
+                  <Font size="13.0" />
+               </font></Button>
+            <Button fx:id="btcerrar" layoutX="197.0" layoutY="128.0" mnemonicParsing="false" onAction="#btcerrar" prefHeight="29.0" prefWidth="79.0" text="Cerrar">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="41.0" layoutY="63.0" prefHeight="19.0" prefWidth="55.0" text="Usuario" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="95.0" text="Contraseña" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.IndController">
+   <top>
+      <Pane prefHeight="354.0" prefWidth="626.0" style="-fx-background-color: #99cfb4;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tabla" layoutX="12.0" layoutY="85.0" onMouseClicked="#click" prefHeight="207.0" prefWidth="606.0">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="42.0" text="Id" />
+                  <TableColumn fx:id="colDpi" prefWidth="99.0" text="Dpi" />
+                <TableColumn fx:id="colNombre" prefWidth="248.0" text="Nombre" />
+                  <TableColumn fx:id="colDireccion" prefWidth="138.0" text="Direccion" />
+                  <TableColumn fx:id="colTelefono" prefWidth="65.0" text="Telefono" />
+              </columns>
+            </TableView>
+            <TextField fx:id="txtNombre" layoutX="153.0" layoutY="52.0" prefHeight="25.0" prefWidth="242.0" promptText="Nombre" />
+            <TextField fx:id="txtDireccion" layoutX="400.0" layoutY="52.0" prefHeight="25.0" prefWidth="138.0" promptText="Direccion" />
+            <TextField fx:id="txtTelefono" layoutX="543.0" layoutY="52.0" prefHeight="25.0" prefWidth="74.0" promptText="Telefono" />
+            <TextField fx:id="txtDpi" layoutX="60.0" layoutY="50.0" prefHeight="25.0" prefWidth="89.0" promptText="Dpi" />
+            <TextField fx:id="txtId" editable="false" layoutX="12.0" layoutY="50.0" prefHeight="25.0" prefWidth="42.0" promptText="Id" />
+            <Label layoutX="211.0" layoutY="14.0" prefHeight="23.0" prefWidth="228.0" text="Ficha Cliente Individual" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+
+            <Button fx:id="btnEliminar" layoutX="227.0" layoutY="319.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="29.0" prefWidth="94.0" text="Eliminar">
+               <font>
+                  <Font size="13.0" />
+               </font></Button>
+            <Button fx:id="btnNuevo" layoutX="404.0" layoutY="309.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="25.0" prefWidth="71.0" text="Nuevo" />
+            <Button fx:id="btnActualizar" layoutX="129.0" layoutY="319.0" mnemonicParsing="false" onAction="#actualizar" prefHeight="29.0" prefWidth="94.0" text="Modificar">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnRegistrar" layoutX="25.0" layoutY="320.0" mnemonicParsing="false" onAction="#gestionRegistrar" prefHeight="29.0" prefWidth="98.0" text="Crear">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
